@@ -1,0 +1,201 @@
+<!DOCTYPE HTML5>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="logo.png" alt="Логотип" width="60">
+                </div>
+                <div class="site-title">Финадеев Василий</div>
+            </div>
+            <nav id="main-menu">
+                <a href="#list">Ссылка меню 1</a>
+                <a href="#table">Ссылка 2</a>
+                <a href="#form">Ссылка 3</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div id="content-wrapper">
+            <section id="" list">
+                <h3>Маркированный список гиперссылок:</h3>
+                <ul>
+                    <li><a href="http://kubsu.ru">Главная страница сайта КубГУ</a></li>
+                    <li><a href="https://kubsu.ru">Главная страница сайта КубГУ (протокол https)</a></li>
+                    <li><a href="http://kubsu.ru"><img src="c:\Users\finad\Downloads\1\1\image.jpg"
+                                alt="Ссылка-изображение на сайт КубГУ" width=300</a></li>
+                    <li><a href="/about">Сокращенныя ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li><a href="#form">Ссылка на фрагмент текущей страницы(переход к форме)</a></li>
+                    <li><a href="https://kubsu.ru/?param1=1&amp;param2=2&amp;param3=3">Ссылка с тремя параметрами в
+                            URL</a>
+                    </li>
+                    <li><a href="https://kubsu.ru/ru/fktipm?id=123">Ссылка на страницу ФКТиПМ на сайте КубГУ с
+                            параметром
+                            id</a></li>
+                    <li><a href="page.html">Относительная ссылка на страницу в текщем каталоге</a></li>
+                    <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+                    </li>
+                    <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше
+                            текущего</a></li>
+                    <li>
+                        <p>
+                            Я учусь в <a href="https://kubsu.ru">Кубанском государственном университете</a><br>
+                            на <a href="https://kubsu.ru/ru/fktipm">Факультете компьютерных технологий и прикладной
+                                математики</a><br>
+                            Мне нравится!
+                        </p>
+                    </li>
+                    <li><a href="https://ru.wikipedia.org/wiki/HTML#История">История HTML на сайте wikipedia(ссылка на
+                            фрагмент страницы стороннего сайта)</a></li>
+                    <li>
+                        <img src="square_and_circle.jpg" alt="Карта" usemap="#map1" width="400" height="300">
+                        <map name="map1">
+                            <area shape="rect" coords="43, 53, 168, 246" href="https://html5book.ru"
+                                alt="Прямоугольная область">
+                            <area shape="circle" coords="285, 148, 73" href="https://htmlbook.ru" alt="Круглая область">
+                        </map>
+                    </li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a>Ссылка без href</a></li>
+                    <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, в которой запрещен переход поисковикам</a>
+                    </li>
+                    <li>
+                        <noindex><a href="https://kubsu.ru">Ссылка, запрещенная для индексации</a></noindex>
+                    </li>
+                    <ol>
+                        <li><a href="https://kubsu.ru" title="Главная страница КубГУ">КубГУ</a></li>
+                        <li><a href="https://kubsu.ru/ru/fktipm"
+                                title="Факультет компьютерных технологий и прикладной математики">ФКТиПМ</a></li>
+                    </ol>
+                    <li><a href="ftp://students:password123@ftp.examplw.ru/files/lab1.zip">Ссылка на файл на сервере FTP
+                            с
+                            авторизацией</a></li>
+                </ul>
+            </section>
+            <section id="table">
+                <h3>Таблица</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>ФИО студента</th>
+                            <th>Группа</th>
+                            <th>Средний балл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Иванов Иван Иванович</td>
+                            <td>ИН21</td>
+                            <td>4.8</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Петров Пётр Петрович</td>
+                            <td>ИН21</td>
+                            <td>3.5</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Сидоров Сидор Сидорович</td>
+                            <td>ИН21</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Кузнецов Кузьма Кузьмич</td>
+                            <td>переведён</td>
+                            <td>3.7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Смирнов Андрей Андреевич</td>
+                            <td>ИН21</td>
+                            <td>3.5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Средний балл по потоку</td>
+                            <td>3.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="form">
+                <form action="#" method="post">
+                    <p>
+                        <label for="fio">ФИО:</label>
+                        <input type="text" id="fio" name="fio" pattern="[A-Za-zА-Яа-яЁё\s\-]+"
+                            title="Введите корректное ФИО (только буквы, пробелы и дефисы)" required><br>
+                    </p>
+                    <p>
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9+\-\(\)\s]+"
+                            title="Введите корректный номер телефона (тольцо цифры, +, -, (, ), пробелы)" required><br>
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"><br>
+                    </p>
+                    <p>
+                        <label for="birthdate">Дата рождения:</label>
+                        <input type="date" id="birthdate" name="birthdate" required><br>
+                    </p>
+                    <fieldset>
+                        <legend>Пол:</legend>
+                        <label><input type="radio" name="gender" value="male">Мужской</label>
+                        <label><input type="radio" name="gender" value="female">Женский</label>
+                    </fieldset>
+                    <p>
+                        <label for="languages">Любимый язык программирования:</label>
+                        <select id="languages" name="languages[]" multiple size="11">
+                            <option value="cpp">C++</option>
+                            <option value="js">JavaScript</option>
+                            <option value="go">Golang</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="php">PHP</option>
+                            <option value="c">C</option>
+                            <option value="pascal">Pascal</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="bio">Биография:</label>
+                        <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="contract" value="yes">
+                            С контрактом ознакомлен(а)
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">Сохранить</button>
+                    </p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>(с) Сергей Синица</p>
+        </div>
+    </footer>
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('birthdate').setAttribute('max', today);
+    </script>
+</body>
+
+</html>
