@@ -154,12 +154,12 @@
                     </p>
                     <fieldset>
                         <legend>Пол:</legend>
-                        <label><input type="radio" name="gender" value="male">Мужской</label>
-                        <label><input type="radio" name="gender" value="female">Женский</label>
+                        <label><input type="radio" name="gender" value="male" required>Мужской</label>
+                        <label><input type="radio" name="gender" value="female" required>Женский</label>
                     </fieldset>
                     <p>
                         <label for="languages">Любимый язык программирования:</label>
-                        <select id="languages" name="languages[]" multiple size="11">
+                        <select id="languages" name="languages[]" multiple size="11" required>
                             <option value="cpp">C++</option>
                             <option value="js">JavaScript</option>
                             <option value="go">Golang</option>
@@ -172,11 +172,11 @@
                     </p>
                     <p>
                         <label for="bio">Биография:</label>
-                        <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+                        <textarea id="bio" name="bio" rows="5" cols="40" required></textarea>
                     </p>
                     <p>
                         <label>
-                            <input type="checkbox" name="contract" value="yes">
+                            <input type="checkbox" name="contract" value="yes" required>
                             С контрактом ознакомлен(а)
                         </label>
                     </p>
